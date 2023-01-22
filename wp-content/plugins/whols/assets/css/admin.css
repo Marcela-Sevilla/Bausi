@@ -1,0 +1,211 @@
+/*===================================
+=            Admin Style            =
+===================================*/
+
+/* General */
+.edit-php.post-type-whols_user_request .wrap .page-title-action,
+.post-php.post-type-whols_user_request .wrap .page-title-action{
+	display: none !important;
+}
+
+.whols_approved{
+    background: #3498db;
+    color: #fff;
+    padding: 3px 5px;
+}
+.whols_rejected{
+    background: #e74c3c;
+    color: #fff;
+    padding: 3px 5px;
+}
+.whols_pending{
+    background: #f1c40f;
+    color: #fff;
+    padding: 3px 5px;
+}
+.whols_pro_notice{
+	text-align: center;
+}
+.whols_pro_notice p{
+	font-size: 1em;
+}
+.whols_pro_notice a{
+	background: #000;
+    padding: 8px 18px 6px;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 5px;
+    display: inline-block;
+}
+.taxonomy-whols_role_cat.term-php .term-slug-wrap input{
+	pointer-events: none;
+	background: #ddd;
+}
+.csf-taxonomy-add-fields>.csf-field>.csf-title h4 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Pro field label*/
+.whols_pro {
+	position: relative;
+	cursor: pointer;
+}
+.whols_pro::before {
+	content: "Pro";
+    background-color: #ad39ce;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.whols_pro::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+    background-color: transparent;
+    z-index: 2;
+}
+.whols_pro .csf-title,
+.whols_pro .csf-fieldset {
+	opacity: 0.5;
+}
+
+/*----------  Help icon  ----------*/
+.csf-title{
+	position: relative;
+}
+.csf-title i{
+	cursor: pointer;
+}
+.csf-title .whols_help_image {
+	display: none;
+    position: absolute;
+    z-index: 9999;
+    bottom: 120%;
+    left: 0;
+    /* width: 239px; */
+    background: #fff;
+    /*height: 225px;*/
+    -webkit-box-shadow: 0px 0px 14px -1px rgb(0 0 0 / 75%);
+    -moz-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 14px -1px rgb(0 0 0 / 75%);
+}
+
+/*----------  Product Edit Page Meta Fields  ----------*/
+.woocommerce_options_panel .whols_product_meta_type_1_pricing input{
+	margin-right: 2%;
+	width: 48%;
+	max-width: 48%;
+}
+.variable_pricing .whols_product_meta_type_1_pricing{
+	display: block;
+    overflow: hidden;
+    width: 100%;
+}
+.variable_pricing .whols_product_meta_type_1_pricing .whols_field_wrap{
+	width: 48%;
+    display: block;
+    float: left;
+}
+.variable_pricing .whols_product_meta_type_1_pricing .whols_field_wrap:last-child{
+	float: right;
+}
+
+.whols_product_meta_type_2_pricing{}
+#woocommerce-product-data .whols_product_meta_type_2_pricing .whols_product_meta_wrap{
+	margin-bottom: 10px;
+	display: block;
+	overflow: hidden;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+	width: 100%;
+}
+.woocommerce_options_panel .whols_product_meta_type_2_pricing select,
+.wc-metaboxes-wrapper .whols_product_meta_type_2_pricing select{
+	width: 100%;
+    max-width: 100%;
+}
+.woocommerce_options_panel .whols_product_meta_type_2_pricing input,
+.wc-metaboxes-wrapper .whols_product_meta_type_2_pricing input{
+	width: 100%;
+}
+.woocommerce_options_panel .whols_product_meta_type_2_pricing input:first-of-type,
+.wc-metaboxes-wrapper .whols_product_meta_type_2_pricing input:first-of-type{
+	margin-right: 2%;
+}
+.whols_remove a{
+	margin-left: 5px;
+}
+#variable_product_options .whols_product_meta_type_2_pricing .notice.woocommerce-message{
+	margin: 0;
+	margin-bottom: 15px;
+	display: block;
+	float: left;
+	padding: 10px;
+}
+.whols_product_meta_type_2_pricing span.whols_field_wrap {
+    width: 31%;
+    display: block;
+    float: left;
+    margin-right: 2%;
+}
+.whols_product_meta_type_2_pricing_wrapper .whols_product_meta_wrap{
+	position: relative;
+}
+.whols_product_meta_type_2_pricing_wrapper i{
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
+.whols_product_meta_type_2_pricing_wrapper i:hover{
+	color: red;
+}
+
+/* User edit metabox additional fields */
+.whols-additional-fields .whols-form-row label{
+	display: none;
+}
+
+
+@media (max-width: 1300px) {
+	#woocommerce-product-data .whols_product_meta_type_2_pricing select{
+		width: 100%;
+	    max-width: 100%;
+	    margin-bottom: 0;
+	}
+	#woocommerce-product-data .whols_product_meta_type_2_pricing input{
+		width: 50%;
+	}
+	#woocommerce-product-data .whols_product_meta_type_2_pricing input:first-of-type{
+		width: 48%;
+		margin-right: 2%;
+
+		margin-right: 0;
+		width: 100%;
+		float: right;
+	}
+
+	.whols_product_meta_type_2_pricing span.whols_field_wrap {
+	    width: 100%;
+	    display: block;
+	    float: left;
+	    margin-right: 0;
+	    margin-bottom: 5px;
+	}
+    .woocommerce_options_panel ._whols_mark_this_product_as_wholesale_only_field{
+        display: flex;
+    }
+    .woocommerce_options_panel ._whols_mark_this_product_as_wholesale_only_field span{
+        display: inline-block;
+        margin-left: 5px;
+    }
+}
+
+
+/*=====  End of Admin Style  ======*/
